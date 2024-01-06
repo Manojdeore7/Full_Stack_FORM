@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 main().catch((err) => console.log(err));
-
+//Connect database to the backend
 async function main() {
   await mongoose.connect("mongodb://127.0.0.1:27017/demo");
   console.log("db connected");
